@@ -84,7 +84,7 @@
     </ul>
   </div>
   <section class="home-section">
-      <div class="text" style="margin-left: 1100px;">ObalaHub</div>
+      <div class="text">ObalaHub</div>
   </section>
   <script src="script.js"></script>
 </div>
