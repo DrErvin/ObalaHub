@@ -7,7 +7,6 @@
 </head>
 <body>
  <div class="slideright">  
-    <img src="8.png" class="img">
   <form method="post" action="login.php">
     <?php include('errors.php'); ?>
     <div class="input-group">
