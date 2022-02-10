@@ -237,11 +237,11 @@
   width: calc(100% - 78px);
 }
 .home-section .text{
-  color: #11101d;
   display: flex;
+  justify-content: center;
+  color: #11101d;
   font-size: 40px;
   font-weight: 800;
-  justify-content: center;
 }
 @media (max-width: 420px) {
   .sidebar li .tooltip{
