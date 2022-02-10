@@ -88,6 +88,5 @@
   </section>
   <script src="script.js"></script>
 </div>
-<?php endif ?>  
 </body>
 </html>
