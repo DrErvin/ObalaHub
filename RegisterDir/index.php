@@ -39,13 +39,6 @@
         <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
-
-      <li>
-          <i class='bx bx-search' ></i>
-         <input type="text" placeholder="Search...">
-         <span class="tooltip">Search</span>
-      </li>
-
       <li>
        <a href="account.php">
          <i class='bx bx-user' ></i>
@@ -74,7 +67,7 @@
        </a>
        <span class="tooltip">Info</span>
      </li>
-     <li style="top:855px">
+     <li>
        <a href="index.php?logout='1'">
          <i class='bx bx-log-out' id="log_out"></i>
          <span class="links_name">Odjava</span>
