@@ -62,7 +62,7 @@
     </ul>
   </div>
   <section class="home-section">
-      <div class="text" style="margin-left: 1200px;">Info</div>
+      <div class="text">Info</div>
   </section>
   <script src="script.js"></script>
 
