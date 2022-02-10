@@ -1,2 +1,0 @@
-# ObalaHub
-opisa bez
