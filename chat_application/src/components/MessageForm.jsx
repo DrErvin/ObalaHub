@@ -28,6 +28,7 @@ const MessageForm = (props) => {
             />
         </form>
     )
+    
 }
 
 export default MessageForm;
