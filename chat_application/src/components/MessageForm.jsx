@@ -1,8 +1,11 @@
 const MessageForm = () => {
+    const handleSubmit = () => {
+        
+    }
     return(
-        <div>
-            MessageForm
-        </div>
+        <form className="messageForm" onSubmit={handleSubmit}>
+
+        </form>
     )
 }
 
