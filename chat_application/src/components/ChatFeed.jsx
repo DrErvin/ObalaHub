@@ -1,3 +1,5 @@
+import { SignalFilled } from "@ant-design/icons";
+import { render } from "@testing-library/react";
 import MessageForm from "./MessageForm";
 import MyMessage from "./MyMessage";
 import TheirMessage from "./TheirMessage";
@@ -8,7 +10,14 @@ const ChatFeed = (props) => {
     const chat = chats && chats[activeChat];
 
     const renderReadReceipts = (message, isMyMessage) => {
-        chat.people.map((person, index) => person.last_read === message.id)
+       return chat.people.map((person, index) => person.last_read === message.id && (
+            <div 
+                key={`read_${index}`}
+                className="read-receipt"
+                style={{float: isMyMessage ? 'right' : 'left',
+                backgroundImage: `url(${person?.person?.avatar})`}} 
+            />
+        ))
     }
 
     const renderMessages = () => {
@@ -28,7 +37,7 @@ const ChatFeed = (props) => {
                         : <TheirMessage message={message} lastMessage={messages[lastMessageKey]}/>
                     }
                     <div className="read-reciepts" style={{marginRight: isMyMessage ? '18px' : '0', marginLeft: isMyMessage ? '0px' : '68px'}}>
-                    read-reciepts
+                    {renderReadReceipts(message, isMyMessage)}
                     </div>
                 </div>
             </div>
