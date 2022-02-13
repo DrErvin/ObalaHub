@@ -8,7 +8,7 @@ const ChatFeed = (props) => {
     const chat = chats && chats[activeChat];
 
     const renderReadReceipts = (message, isMyMessage) => {
-        chat.people.map((person, index) => person.last_read == message.id)
+        chat.people.map((person, index) => person.last_read === message.id)
     }
 
     const renderMessages = () => {
@@ -16,8 +16,8 @@ const ChatFeed = (props) => {
 
         return keys.map((key, index) => {
         const message = messages[key];
-        const lastMessageKey = index == 0 ? null : keys[index - 1];
-        const isMyMessage = userName == message.sender.username;
+        const lastMessageKey = index === 0 ? null : keys[index - 1];
+        const isMyMessage = userName === message.sender.username;
 
         return(
             <div key={`msg_${index}`} style={{width:'100%'}}>
