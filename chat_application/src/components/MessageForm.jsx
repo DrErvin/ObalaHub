@@ -20,7 +20,7 @@ const MessageForm = (props) => {
         isTyping(props, chatID)
     }
     const handleUpload = (event) =>{
-        sendMessage(creds, chatID, { files: event.target.value, text: '' })
+        sendMessage(creds, chatID, { files: event.target.files, text: '' })
     }
     return(
         <form className="messageForm" onSubmit={handleSubmit}>
