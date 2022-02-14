@@ -5,10 +5,12 @@ const LoginForm = () => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
 
+    const projectID = '76d27ce1-a79d-4622-83fe-d3a96a8a54cb';
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const authObject = { 'Project-ID': "76d27ce1-a79d-4622-83fe-d3a96a8a54cb" , 'User-Name': username, 'User-Secret': password }
+        const authObject = { 'Project-ID': projectID , 'User-Name': username, 'User-Secret': password }
     
 
     try{
