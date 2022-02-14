@@ -22,7 +22,7 @@ const LoginForm = () => {
         window.location.reload();
     }
     catch(error){
-        setError('Wrong passrod and username combination')
+        setError('Wrong password and username combination')
     }
 }   
     return(
