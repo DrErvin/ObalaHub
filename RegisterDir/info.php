@@ -53,7 +53,7 @@
        <span class="tooltip">Poruke</span>
      </li>
 
-     <li style="top:855px">
+     <li>
        <a href="index.php?logout='1'">
          <i class='bx bx-log-out' id="log_out"></i>
          <span class="links_name">Odjava</span>

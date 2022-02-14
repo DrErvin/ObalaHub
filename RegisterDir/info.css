@@ -225,6 +225,8 @@ body {text-align:center;}
 }
 .home-section{
   position: relative;
+  display: flex;
+  justify-content: center;
   background: #dbe5ff;
   min-height: 100vh;
   top: 0;
@@ -261,3 +263,4 @@ table.center {
   .sidebar li .tooltip{
     display: none;
   }
+}
