@@ -267,3 +267,7 @@ table.center {
 h3{
   text-align:center;
 }
+.lokacija{
+  margin-left: auto;
+  margin-right: auto;
+}

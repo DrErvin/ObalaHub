@@ -96,7 +96,9 @@ for($i=0; $i<8; $i++)
 ?>
     <h3>Tlocrt škole</h3>
     <h3>Lokacija</h3>
+    <div class="lokacija">
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11507.809592441896!2d18.4157977!3d43.8568153!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48a630f2c7e8fdee!2sGimnazija%20Obala%20Sarajevo!5e0!3m2!1shr!2sba!4v1644563261290!5m2!1shr!2sba" width="600" height="450" style="border:1000;" allowfullscreen="" loading="lazy"></iframe>
-  </section>
+  </div>
+</section>
   <script src="script.js"></script>
 </body>
