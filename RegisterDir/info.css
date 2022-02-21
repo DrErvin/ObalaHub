@@ -226,6 +226,7 @@ body {text-align:center;}
 .home-section{
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background: #dbe5ff;
   min-height: 100vh;
@@ -257,10 +258,12 @@ table.center {
   color: #11101d;
   font-size: 40px;
   font-weight: 800;
-  margin-left: 1055px;
 }
 @media (max-width: 420px) {
   .sidebar li .tooltip{
     display: none;
   }
+}
+h3{
+  text-align:center;
 }
