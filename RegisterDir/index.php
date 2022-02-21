@@ -54,7 +54,7 @@
        <span class="tooltip">Workshop</span>
      </li>
      <li>
-       <a href="#">
+       <a href="">
          <i class='bx bx-chat' ></i>
          <span class="links_name">Poruke</span>
        </a>
