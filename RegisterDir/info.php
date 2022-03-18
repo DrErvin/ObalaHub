@@ -65,18 +65,23 @@
   <section class="home-section">
       <div class="text" style="margin-left: 1200px;">Info</div>
     <h2>Podaci o školi</h2>
-    <h3>Raspored</h3>
-<?php 
+    <br>
+    <h3>Rasporedi</h3>
+    <br>
+    <h3>III-2</h3>
+    <?php 
 error_reporting(0);
 count($raspored=array(
-  array("Ponedjeljak","  Utorak","  Srijeda","  Cetvrtak","  Petak"),
-  array("SI", "               ","   WP", "                ", " SI"),
-  array("SI","                 ","  WP", "       Filo","      Filo"),
-  array("SI        ","   OZ", "      RMA", "      BHS", "       Matematika"),
-  array("Matematika","   Engleski","RMA", "      BHS", "       Engleski"),
-  array("Matematika","   Sport","   Engleski", " Prog", "      Latinski"),
-  array("Sport", "        Njemacki", "Filo","     Prog", "      Vjeronauka"),
-  array("Njemacki", "  ", "                    ", "          ", "BHS")
+  array("Ponedjeljak",       " Utorak",           "Srijeda",                  "Četvrtak","  Petak"),
+  array("           ",       "Odjeljenska",       "Francuski",                "  ",         "DSD"),
+  array("DSD",               "Engleski   ",       "Psihologija",              " ",          "Njemački"),
+  array("Geografija/Hemija", "Engleski",          "Bosanski",                 "Latinski", "Historija/Sociologija"),
+  array("Geografija/Hemija", "Psihologija",       "Bosanski",                 "Engleski", "Latinski"),
+  array("Demokratija",       "Sociologija/Fizika","Geografija/Hemija",        "Demokratija", "Sport"),
+  array("Matematika",        "Historija/Sociologija", "Sport",                "Historija/Fizika", "Matematika"),
+  array("Matematika",        "Biologija",       "Vjeronauka/Kultura religija","Sociologija/Fizika", "Bosanski"),
+  array("Francuski","","Njemački","Sociologija/Biologija",""),
+  array("","","","Biologija","")
   ));
   echo "<table class='center'>";
 for($i=0; $i<8; $i++)
@@ -94,10 +99,104 @@ for($i=0; $i<8; $i++)
      echo"</table>";
 
 ?>
+    <br>
+    <h3>IV-4</h3>
+<?php 
+error_reporting(0);
+count($raspored=array(
+  array("Ponedjeljak",         " Utorak","  Srijeda","  Četvrtak","  Petak"),
+  array("Softver inžinjering", "               ","Web programiranje", "  ", " "),
+  array("Softver inžinjering", "           ","Web programiranje", "       Filozofija","Filozofija"),
+  array("Softver inžinjering", "Odjeljenska", "RMA", "      BHS", "       Matematika"),
+  array("Matematika",          "Engleski",    "RMA", "      BHS", "       Engleski"),
+  array("Matematika",          "Sport",    "Engleski", " Programiranje", "Latinski"),
+  array("Sport",               "Njemački", "Filozofija","     Programiranje", "Vjeronauka"),
+  array("Njemački",             "  ",       "                    ", "          ", "BHS")
+  ));
+  echo "<table class='center'>";
+for($i=0; $i<8; $i++)
+  { 
+      echo "<tr>";
+
+  for($j=0; $j<5; $j++)
+  {
+
+    echo "<td>".$raspored[$i][$j]."</td>";
+  }
+    echo"</tr>";
+  }
+
+     echo"</table>";
+
+?>
+<br>
+<h3>IV-1</h3>
+<?php 
+error_reporting(0);
+count($raspored=array(
+  array("Ponedjeljak","  Utorak","  Srijeda","  Četvrtak","  Petak"),
+  array("","","","",""),
+  array("Engleski", "Latinski ",      "  ",       "Vjeronauka",      "Sport"),
+  array("Filozofija","Njemački",     "Engleski",  "Filozofija",      "Odjeljenska"),
+  array("Sociologija","Geografija",  "Historija", "Historija",       "Historija"),
+  array("Bosanski","Matematika",     "Sport",     "Sociologija",     "Geografija"),
+  array("Matematika","Filozofija",   " Bosanski", "Njemački",        "Geografija"),
+  array("Matematika", "Sociologija", "Bosanski",   "Engleski ",      "DSD"),
+  array("       DSD", "            ","Kultura religija", "        ", "    ")
+  ));
+  echo "<table class='center'>";
+for($i=0; $i<8; $i++)
+  { 
+      echo "<tr>";
+
+  for($j=0; $j<5; $j++)
+  {
+
+    echo "<td>".$raspored[$i][$j]."</td>";
+  }
+    echo"</tr>";
+  }
+
+     echo"</table>";
+
+?>
+<br>
+<h3>IV-2</h3>
+<?php 
+error_reporting(0);
+count($raspored=array(
+  array("Ponedjeljak",           " Utorak","  Srijeda","  Četvrtak","  Petak"),
+  array("Specijalna pedagogija", "       ","Odgoj u OB", "Francuski", "Filozofija"),
+  array("Specijalna pedagogija", "        ","Odgoj u OB", "Latinski","Vjeronauka/Kultura religija"),
+  array("Matematika",            "Filozofija","Engleski", "Sport   ","Socijalna psihologija"),
+  array("Sport",                 "DIDAK",     "Engleski", "Matematika", "Bosanski"),
+  array("Socijalna psihologija", "DIDAK",    "Filozofija","Matematika", "Engleski"),
+  array("Njemački",              "Bosanski", "Odjeljenska","Njemački ", "         "),
+  array("DSD",                   "Bosanski", "Francuski  ","        ", "          "),
+  array("         ",             "Likovno ", "        ",  "          ", "         "),
+array("         ",             "Muzičko",   "       ",    "          ", "         "),
+  ));
+  echo "<table class='center'>";
+for($i=0; $i<8; $i++)
+  { 
+      echo "<tr>";
+
+  for($j=0; $j<5; $j++)
+  {
+
+    echo "<td>".$raspored[$i][$j]."</td>";
+  }
+    echo"</tr>";
+  }
+
+     echo"</table>";
+
+?>
+<br>
     <h3>Tlocrt škole</h3>
     <h3>Lokacija</h3>
     <div class="lokacija">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11507.809592441896!2d18.4157977!3d43.8568153!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48a630f2c7e8fdee!2sGimnazija%20Obala%20Sarajevo!5e0!3m2!1shr!2sba!4v1644563261290!5m2!1shr!2sba" width="600" height="450" style="border:1000;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11507.809592441896!2d18.4157977!3d43.8568153!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48a630f2c7e8fdee!2sGimnazija%20Obala%20Sarajevo!5e0!3m2!1shr!2sba!4v1644563261290!5m2!1shr!2sba" width="400" height="250" style="border:1000;" allowfullscreen="" loading="lazy"></iframe>
   </div>
 </section>
   <script src="script.js"></script>
