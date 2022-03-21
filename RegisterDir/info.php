@@ -39,7 +39,7 @@
        <span class="tooltip">Korisnik</span>
      </li>
      <li>
-       <a href="#">
+       <a href="index-workshop.html">
          <i class='bx bx-food-menu' ></i>
          <span class="links_name">Workshop</span>
        </a>
@@ -69,7 +69,7 @@
     <h3>Rasporedi</h3>
     <br>
     <h3>III-2</h3>
-    <?php 
+    <?php
 error_reporting(0);
 count($raspored=array(
   array("Ponedjeljak",       " Utorak",           "Srijeda",                  "Četvrtak","  Petak"),
@@ -85,7 +85,7 @@ count($raspored=array(
   ));
   echo "<table class='center'>";
 for($i=0; $i<8; $i++)
-  { 
+  {
       echo "<tr>";
 
   for($j=0; $j<5; $j++)
@@ -101,7 +101,7 @@ for($i=0; $i<8; $i++)
 ?>
     <br>
     <h3>IV-4</h3>
-<?php 
+<?php
 error_reporting(0);
 count($raspored=array(
   array("Ponedjeljak",         " Utorak","  Srijeda","  Četvrtak","  Petak"),
@@ -115,7 +115,7 @@ count($raspored=array(
   ));
   echo "<table class='center'>";
 for($i=0; $i<8; $i++)
-  { 
+  {
       echo "<tr>";
 
   for($j=0; $j<5; $j++)
@@ -131,7 +131,7 @@ for($i=0; $i<8; $i++)
 ?>
 <br>
 <h3>IV-1</h3>
-<?php 
+<?php
 error_reporting(0);
 count($raspored=array(
   array("Ponedjeljak","  Utorak","  Srijeda","  Četvrtak","  Petak"),
@@ -146,7 +146,7 @@ count($raspored=array(
   ));
   echo "<table class='center'>";
 for($i=0; $i<8; $i++)
-  { 
+  {
       echo "<tr>";
 
   for($j=0; $j<5; $j++)
@@ -162,7 +162,7 @@ for($i=0; $i<8; $i++)
 ?>
 <br>
 <h3>IV-2</h3>
-<?php 
+<?php
 error_reporting(0);
 count($raspored=array(
   array("Ponedjeljak",           " Utorak","  Srijeda","  Četvrtak","  Petak"),
@@ -178,7 +178,7 @@ array("         ",             "Muzičko",   "       ",    "          ", "      
   ));
   echo "<table class='center'>";
 for($i=0; $i<8; $i++)
-  { 
+  {
       echo "<tr>";
 
   for($j=0; $j<5; $j++)
