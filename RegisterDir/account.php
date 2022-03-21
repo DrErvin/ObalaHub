@@ -25,7 +25,7 @@
        <span class="tooltip">Početna stranica</span>
      </li>
      <li>
-       <a href="#">
+       <a href="index-workshop.html">
          <i class='bx bx-food-menu' ></i>
          <span class="links_name">Workshop</span>
        </a>
@@ -70,7 +70,7 @@ $username= $_SESSION ['username'];
 $db = mysqli_connect('localhost', 'root', '', 'registration');
       $query = "SELECT email, name, surname, razred, odjeljenje FROM users WHERE username='$username'";
       $result = mysqli_query($db, $query);
-          while($row = $result->fetch_assoc()) 
+          while($row = $result->fetch_assoc())
      {
          echo  "<br>" . "Ime: " . $row["name"]. "<br>". "Prezime: " . $row["surname"]. "<br>".  "Odjeljenje: " . $row["odjeljenje"]. "<br>". "Razred: " . $row["razred"]. "<br>". "Email: " . $row["email"]. "<br>";
      }
