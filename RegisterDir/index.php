@@ -20,6 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link rel="stylesheet" type="text/css" href="sidebar.css">
+  <link rel="stylesheet" type="text/css" href="blog.css">
 </head>
 <body>
     <?php if (isset($_SESSION['success'])) : ?>
@@ -85,7 +86,102 @@
     </ul>
   </div>
   <section class="home-section">
-      <div class="text">ObalaHub</div>
+      <div class="text"><h1>ObalaHub</h1></div>
+      <section class = "blog" id = "blog">
+      <div class = "container">
+        <div class = "blog-content">
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <img src = "images/logo.png" alt = "">
+            </div>
+            <div class = "blog-text">
+              <span>23 Mart, 2022</span>
+              <h2>OBAVJEŠTENJE o raspisanom Javnom konkursu za popunu upražnjenih radnih mjesta u školskoj 2021/2022. godini:</h2>
+              <p>Nastavnik/ca sociologije na njemačkom jeziku za bilingvalni program ... 1 izvršilac - 2 časa nastavne norme sedmično, na određeno vrijeme, od okončanja konkursne procedure do povratka radnice sa porodiljskog odsustva, a najkasnije do 11.05.2022. godine;
+nastavnik/ca engleskog jezika ... 1 izvršilac - 9 časova nastavne norme sedmično, na određeno vrijeme, od okončanja konkursne procedure, a najkasnije do 31.08.2022. godine;
+nastavnik/ca psihologije ... 1 izvršilac - 22 časa nastavne norme sedmično, na određeno vrijeme, od okončanja konkursne procedure, a najkasnije do 31.08.2022. godine;
+nastavnik/ca njemačkog jezika ... 1 izvršilac - 14 časova nastavne norme sedmično, na određeno vrijeme, od okončanja konkursne procedure, a najkasnije do 31.08.2022. godine;
+nastavnik/ca informatike ... 1 izvršilac - 20 časova nastavne norme sedmično, na određeno vrijeme, od okončanja konkursne procedure, a najkasnije do 31.08.2022. godine;
+nastavnik/ca matematike ... 1 izvršilac - 7 časova nastavne norme sedmično, na određeno vrijeme, od okončanja konkursne procedure, a najkasnije do 31.08.2022. godine;
+bibliotekar/ka ... 1 izvršilac - 20 sati sedmično, na određeno vrijeme, od okončanja konkursne procedure , a najkasnije do 31.08.2022. godine.
+Kompletan sadržaj teksta javnog kokursa možete pogledati na LINKu, kao i na službenim stranicama Ministarstva za odgoj i obrazovanje Kantona Sarajevo (www.mo.ks.gov.ba) i Javne ustanove „Služba za zapošljavanje Kantona Sarajevo“  (www.szks.ba).
+
+Javni konkurs ostaje otvoren deset dana od dana objave obavještenja u dnevnim novinama, a krajnji rok za prijavu na ovaj javni konkurs je 29.3.2022. godine.
+
+Konkurs će ostati  objavljen na internet stranicama u čitavom periodu roka prijave.
+              </p>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <img src = "images/blog-p-2.jpg" alt = "">
+            </div>
+            <div class = "blog-text">
+              <span>20 January, 2020</span>
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+              <a href = "#">Read More</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <img src = "images/blog-p-3.jpg" alt = "">
+            </div>
+            <div class = "blog-text">
+              <span>20 January, 2020</span>
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+              <a href = "#">Read More</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <img src = "images/blog-p-4.jpg" alt = "">
+            </div>
+            <div class = "blog-text">
+              <span>20 January, 2020</span>
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+              <a href = "#">Read More</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <img src = "images/blog-p-5.jpg" alt = "">
+            </div>
+            <div class = "blog-text">
+              <span>20 January, 2020</span>
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+              <a href = "#">Read More</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <img src = "images/blog-p-6.jpg" alt = "">
+            </div>
+            <div class = "blog-text">
+              <span>20 January, 2020</span>
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+              <a href = "#">Read More</a>
+            </div>
+          </div>
+          <!-- end of item -->
+        </div>
+      </div>
+    </section>
   </section>
   <script src="script.js"></script>
 </div>
