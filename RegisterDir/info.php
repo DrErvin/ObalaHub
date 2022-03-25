@@ -63,7 +63,7 @@
     </ul>
   </div>
   <section class="home-section">
-      <div class="text" style="margin-left: 1200px;">Info</div>
+      <div class="text">Info</div>
     <h2>Podaci o školi</h2>
     <br>
     <h3>Rasporedi</h3>
