@@ -40,6 +40,14 @@
     </div>
     <ul class="nav-list">
       <li>
+       <a href="index.php">
+         <i class='bx bx-home' ></i>
+         <span class="links_name">Početna stranica</span>
+       </a>
+       <span class="tooltip">Početna stranica</span>
+     </li>
+     <li>
+      <li>
        <a href="account.php">
          <i class='bx bx-user' ></i>
          <span class="links_name">Korisnik</span>
@@ -47,14 +55,14 @@
        <span class="tooltip">Korisnik</span>
      </li>
      <li>
-       <a href="#">
+       <a href="index-workshop.html">
          <i class='bx bx-food-menu' ></i>
          <span class="links_name">Workshop</span>
        </a>
        <span class="tooltip">Workshop</span>
      </li>
      <li>
-       <a href="">
+       <a href="#">
          <i class='bx bx-chat' ></i>
          <span class="links_name">Poruke</span>
        </a>

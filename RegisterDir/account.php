@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
          <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -17,12 +17,20 @@
         <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
-     <li>
+      <li>
        <a href="index.php">
          <i class='bx bx-home' ></i>
          <span class="links_name">Početna stranica</span>
        </a>
        <span class="tooltip">Početna stranica</span>
+     </li>
+     <li>
+      <li>
+       <a href="account.php">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Korisnik</span>
+       </a>
+       <span class="tooltip">Korisnik</span>
      </li>
      <li>
        <a href="index-workshop.html">
