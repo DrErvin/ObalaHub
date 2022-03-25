@@ -1,12 +1,16 @@
-#style.css
+#style-workshop2.css
 *{
   box-sizing: border-box;
 }
   body {
+     overflow:hidden;
     padding: 0 1em;
     font-family: sans-serif;
   }
-
+.pform{
+   overflow: hidden;
+   margin-left:70px;
+}
   /* * Post widget * */
 
   input[type="file"] {
@@ -140,6 +144,7 @@
 
   }
 html{
+   overflow-x: hidden;
   font-size: 14px;
   font-family: sans-serif;
 background-color:#373e98;
@@ -157,14 +162,14 @@ h3{
   text-align: top;
 }
 h1{
+   overflow-x: hidden;
   font-size: 30px;
   font-weight: bolder;
   text-align: center;
 
   background-color: #2a2a2a;
   padding: 10px;
-margin-left:-20px;
-margin-right:-20px;
+margin-left: 80px;
 
 }
 .logo{
@@ -175,51 +180,66 @@ margin-right:-20px;
 }
 .container
 {
+   overflow-x: hidden;
   margin:20px;
   padding:20px;
 }
 .subforum
 {
+   overflow-x: hidden;
   margin-top: 20px;
+
 }
 .subforum-title
 {
+   overflow-x: hidden;
   background-color: #111314;
   padding:10px;
   border-radius: 5px;
   margin: 4px;
+
 }
 .subforum-row{
+   overflow-x: hidden;
   display: grid;
   grid-template-columns: 7% 60% 13% 20%;
+
 }
 .subforum-column
 {
+   overflow-x: hidden;
   padding:10px;
   margin:4px;
   border-radius: 5px;
   background-color: #111314;
+
+
 }
 
 .subforum-icon{
+   overflow-x: hidden;
     padding:5px;
     margin: 4px;
+
   }
   .icon{
-    width: 70px;
-    height: 40px;
-    padding: 20px;
+    width: 105px;
+    height: 60px;
+
 }
 footer{
+   overflow-x: hidden;
   position: fixed;
   text-align: center;
   padding: 5px 5px 5px 5px;
   margin: 5px;
-  left: -10px;
+
          bottom: 0;
          width: 100%;
 
          /* Height of the footer*/
          height: 50px;
          background: #2a2a2a;
+
+
 }
