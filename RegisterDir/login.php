@@ -6,7 +6,8 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
- <div class="slideright">  
+  <img src="ObalaHublogo.png"></img>
+ <div class="slideright">
   <form method="post" action="login.php">
     <?php include('errors.php'); ?>
     <div class="input-group">
