@@ -21,7 +21,7 @@
     </div>
     <div style="position: relative; top: px">
        <p align="center" style="font-size:22.5px; color: #11101d">
-        Niste jos član, registrujte se! <a href="register.php" style="color: #11101d"><u>Registracija</u></a>
+        Niste jos član? Registrujte se! <a href="register.php" style="color: #11101d"><u>Registracija</u></a>
       </div>
     </p>
   </form>
