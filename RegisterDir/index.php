@@ -63,7 +63,7 @@
        <span class="tooltip">Workshop</span>
      </li>
      <li>
-       <a href="#">
+       <a href="http://localhost:3000">
          <i class='bx bx-chat' ></i>
          <span class="links_name">Poruke</span>
        </a>

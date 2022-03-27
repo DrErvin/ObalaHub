@@ -1,5 +1,4 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
 <head>
          <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta charset="UTF-8">

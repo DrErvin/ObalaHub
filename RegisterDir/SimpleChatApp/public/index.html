@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="sidebar.css">
+		<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+		<title>ObalaChat</title>
+	</head>
+	<body>
+		<div class="sidebar">
+      <div class="logo-details">
+        <i class='bx bx-school'></i>
+          <div class="logo_name">ObalaHub</div>
+          <i class='bx bx-menu' id="btn" ></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+         <a href="index.php">
+           <i class='bx bx-home' ></i>
+           <span class="links_name">Početna stranica</span>
+         </a>
+         <span class="tooltip">Početna stranica</span>
+       </li>
+       <li>
+        <li>
+         <a href="account.php">
+           <i class='bx bx-user' ></i>
+           <span class="links_name">Korisnik</span>
+         </a>
+         <span class="tooltip">Korisnik</span>
+       </li>
+       <li>
+         <a href="index-workshop.html">
+           <i class='bx bx-food-menu' ></i>
+           <span class="links_name">Workshop</span>
+         </a>
+         <span class="tooltip">Workshop</span>
+       </li>
+       <li>
+         <a href="http://localhost:3000">
+           <i class='bx bx-chat' ></i>
+           <span class="links_name">Poruke</span>
+         </a>
+         <span class="tooltip">Poruke</span>
+       </li>
+       <li>
+         <a href="info.php">
+           <i class='bx bx-info-circle'></i>
+           <span class="links_name">Info</span>
+         </a>
+         <span class="tooltip">Info</span>
+       </li>
+       <li>
+         <a href="index.php?logout='1'">
+           <i class='bx bx-log-out' id="log_out"></i>
+           <span class="links_name">Odjava</span>
+         </a>
+         <span class="tooltip">Odjava</span>
+       </li>
+      </ul>
+    </div>
+		<div class="join-container">
+			<header class="join-header">
+				<h1>ObalaChat</h1>
+			</header>
+			<main class="join-main">
+				<form action="chat.html">
+					<div class="form-control">
+						<label for="username">Username</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter A Username"
+							required
+						/>
+					</div>
+					<div class="form-control">
+						<label for="room">Chat Rooms</label>
+						<select name="room" id="room">
+							<option selected disabled>Please Select Any...</option>
+							<option value="Marvel Fans">Marvel Fans</option>
+							<option value="DC Fans">DC Fans</option>
+							<option value="Star Wars Fans">Star Wars Fans</option>
+							<option value="Harry Potter Fans">Harry Potter Fans</option>
+							<option value="Game Of Thrones Fans">Game Of Thrones Fans</option>
+							<option value="Lord Of The Rings Fans">Lord Of The Rings Fans</option>
+						</select>
+					</div>
+					<button type="submit" class="btn">Join Now</button>
+				</form>
+			</main>
+		</div>
+		<script src="script.js"></script>
+	</body>
