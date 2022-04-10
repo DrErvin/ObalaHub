@@ -1,7 +1,92 @@
+
 .box {
-  display: flex;
+  position:relative;
+  display:table;
+  width:50%;
+  min-height:300px;
+  padding:20px;
+  background-color:#11101d;
+  
+  margin:15px auto;
+  text-align:center;
+  color:#ffffff;
+  z-index:10;
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+
+.box:before,
+.box:after {
+  content:"";
+  display:block;
+  position:absolute;
+  opacity:1;
+  -moz-transition: opacity 0.4s, transform 0.4s;
+  -webkit-transition: opacity 0.4s, transform 0.4s;
+  transition: opacity 0.4s, transform 0.4s;
+  z-index:11;
+}
+.box:before {
+  top: 20px;
+  right: 10px;
+  bottom: 20px;
+  left: 10px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.box:after {
+  top: 10px;
+  right: 20px;
+  bottom: 10px;
+  left: 20px;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+}
+.box:hover {
+  background-color:rgba(39, 37, 63);
+}
+.box:hover:before,
+.box:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
+.box .fancy-content {
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  height:100%;
+  position:relative; 
   justify-content: center;
   text-align: center;
-  padding-top: 10px;
-  font-size: 25px;
+  z-index:99;
+  opacity:0;
+  padding-top: 29px;
+  -moz-transition: opacity 0.4s;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
+.box:hover .fancy-content {
+  opacity:1;
+}
+.box .fancy-content h3 {
+  text-shadow:0 1px 5px rgba(0,0,0,0.5);
+}
+button {
+  margin-left: 25.2rem;
+  cursor:pointer;
+  width: 85px;
+}
+
+

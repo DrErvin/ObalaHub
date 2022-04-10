@@ -82,6 +82,11 @@ $db = mysqli_connect('localhost', 'root', '', 'registration');
          echo  "<br>" . "Ime: " . $row["name"]. "<br>". "Prezime: " . $row["surname"]. "<br>".  "Odjeljenje: " . $row["odjeljenje"]. "<br>". "Razred: " . $row["razred"]. "<br>". "Email: " . $row["email"]. "<br>";
      }
  ?>
+     <div class="fancy-content">
+    <h3>Želite promijeniti podatke?</h3>
+    <button type="button">Promjeni</button>
+ </div>
+ 
 </div>
 
   </section>
