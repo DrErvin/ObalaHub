@@ -149,7 +149,9 @@ form{
 
   }
 html{
-   overflow-x: hidden;
+overflow-x: hidden;
+overflow-y: visible;
+position:relative;
   font-size: 14px;
   font-family: sans-serif;
 background-color:#373e98;
@@ -208,18 +210,16 @@ color:white;
 .subforum-row{
    overflow-x: hidden;
   display: grid;
-  grid-template-columns: 7% 60% 13% 20%;
-
+  grid-template-columns: 7% 73% 20%;
+grid-column: auto;
 }
 .subforum-column
 {
-   overflow-x: hidden;
-  padding:10px;
-  margin:4px;
-  border-radius: 5px;
-  background-color: #111314;
-
-
+  overflow-x: hidden;
+ padding:10px;
+ margin:4px;
+ border-radius: 5px;
+ background-color: #111314;
 }
 
 .subforum-icon{
@@ -229,25 +229,11 @@ color:white;
 
   }
   .icon{
-    width: 105px;
+    width: 100px;
     height: 60px;
 
 }
-footer{
+
+p{
   color:white;
-   overflow-x: hidden;
-  position: fixed;
-  text-align: center;
-  padding: 5px 5px 5px 5px;
-  margin: 5px;
-
-         bottom: 0;
-         width: 100%;
-
-         /* Height of the footer*/
-         height: 50px;
-         background: #2a2a2a;
-
-
 }
-
