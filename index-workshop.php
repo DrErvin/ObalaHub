@@ -9,6 +9,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="account.php" rel='account'>
+    <link href="i-w-c.php" rel='i-w-c'>
 <Title >Workshop </title>
 </head>
 <body>
@@ -37,7 +38,7 @@
      <span class="tooltip">Korisnik</span>
    </li>
    <li>
-     <a href="index-workshop.html">
+     <a href="index-workshop.php">
        <i class='bx bx-food-menu' ></i>
        <span class="links_name">Workshop</span>
      </a>
@@ -83,13 +84,14 @@
             <div class="widget-post__header">
               <h3 class="widget-post__title" id="post-header-title">
                  <i class="fa fa-pencil" aria-hidden="true"></i>
-                Write a post
+                Napiši post
               </h3>
             </div>
-            <form id="widget-form" class="widget-post__form" name="form" aria-label="post widget" action="index-workshop.php" method="get">
+            <form id="widget-form" class="widget-post__form" name="form" aria-label="post widget" action="i-w-c.php" method="get">
               <div class="widget-post__content">
                 <label for="post-content" class="sr-only">Share</label>
-                <textarea name="post" id="post-content" method="get" class="widget-post__textarea scroller" placeholder="Type here..."></textarea>
+                <textarea name="post" id="post-content" method="get" class="widget-post__textarea scroller" placeholder="Pisi ovdje..."></textarea>
+                  <textarea name="username" id="post-content" method="get" class="widget-post__textarea scroller" placeholder="Ime:"></textarea>
               </div>
               <div class="widget-post__options is--hidden" id="stock-options">
               </div>
@@ -101,48 +103,19 @@
                   </button>
                   <button type="button" class="btn post-actions__upload attachments--btn">
                     <label for="upload-image" class="post-actions__label">
-                       <i class="fa fa-upload" aria-hidden="true"></i> upload image
+                       <i class="fa fa-upload" aria-hidden="true"></i> Prikači sliku
                     </label>
                   </button>
                   <input type="file" id="upload-image" accept="image/*" multiple>
                 </div>
                 <div class="post-actions__widget">
-                  <button class="btn post-actions__publish">publish</button>
+                  <button class="btn post-actions__publish">Objavi</button>
                 </div>
               </div>
             </form>
 
 
 
-            <?php
-            session_start();
-             $conn = mysqli_connect("localhost", "root", '', "registration");
-            if($conn === false){
-                       die("ERROR: Could not connect. "
-                           . mysqli_connect_error());
-                   }
-
-                   // Taking all 5 values from the form data(input)
-                   $ime =  $_REQUEST['post'];
-                   $sadrzaj = $_REQUEST[$username];
-
-
-                   // Performing insert query execution
-                   // here our table name is college
-                   $sql = "INSERT INTO forum  VALUES ('$ime',
-                       '$sadrzaj')";
-
-                   if(mysqli_query($conn, $sql)){
-
-                       echo nl2br("\n$ime\n $sadrzaj\n");
-                   } else{
-                       echo "ERROR: Hush! Sorry $sql. "
-                           . mysqli_error($conn);
-                   }
-
-                   // Close connection
-                   mysqli_close($conn);
-                   ?>
 
 </div>
 </div>
@@ -155,30 +128,43 @@
 
       </div>
 
+<?php
+$servername = "localhost";
+$username = "loaclhost";
+$password = "";
+$dbname = "registration";
+$conn = mysqli_connect("localhost", "root", '', "registration");
+// Check connection
+if ($conn->connect_error) {
+ die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT sadrzaj, ime FROM forum";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+   while($res = $result->fetch_assoc()) {
+ echo '
       <div class="subforum-row">
             <div class="subforum-icon subforum-column">
               <img class="icon" src="icon.png">
                 <i class=""></i>
             </div>
             <div class="subforum-description subforum-column">
-                <h3><a href="#">Description Title</a></h3>
-                <p> .</p>
-            </div>
-            <div class="subforum-stats subforum-column">
-                <span>24 Posts | 12 Topics</span>
-            </div>
-            <div class="subforum-info subforum-column">
-                <b><a href="">Last post</a></b> by <a href="" action="account.php" method="get">  </a>
-                <br>on <small>12 Dec 2020</small>
+                <h3><a href="#">Sadržaj</a></h3>
+                <p>'.$res['sadrzaj'].'</p>
+            </div>';
+          echo ' <div class="subforum-info subforum-column">
+                <b><a href="">'.$res['ime'].' </a></b>
         </div>
-      </div>
+      </div>';}
 
-    </div>
-  </div>
-</div>
-<footer>
-<h4> Made by 🤍 Obala Team</h4>
-</footer>
+}
+else {
+  echo "0 results";
+}
+$conn->close();
+?>
+
 <script src="script.js"></script>
 </body>
 </html>
