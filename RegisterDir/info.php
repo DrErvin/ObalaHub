@@ -33,7 +33,7 @@
        <span class="tooltip">Korisnik</span>
      </li>
      <li>
-       <a href="index-workshop.html">
+       <a href="index-workshop.php">
          <i class='bx bx-food-menu' ></i>
          <span class="links_name">Workshop</span>
        </a>
